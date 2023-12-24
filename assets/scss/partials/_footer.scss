@@ -1,0 +1,168 @@
+.footer_section{
+    background-color: #111;
+    padding: 36px 0px;
+    .footer_wrapper{
+        .contact_info{
+            padding-left: 150px;
+            @media(max-width:991px){
+                padding-left: 100px;
+            }
+            @media(max-width:576px){
+                padding-left: 15%;
+                padding-right: 5%;
+            }
+            @media(max-width:376px){
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+        }
+        .info{
+            display: flex;
+            color: white;
+            margin-bottom: 33px;
+            .widget{
+                list-style: none;
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+         .Phonenumber, .Email {
+             .phone_image , .Email_image{
+                margin-right: 50px;
+                svg{
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+        } 
+        .address{
+            .address_image{
+                margin-right: 40px;
+                svg{
+                    width: 52px !important;
+                    height: 46px !important;
+                }
+            }
+        }
+    }
+    .contact_form{
+        .widget{
+            list-style: none;
+            @media(max-width:991px){
+                display: flex;
+                justify-content: center;
+            }
+            .wpcf7{
+                width: 367px;
+                
+                .contact-row{
+                    display: flex;
+                    gap: 27px;
+                    @media(max-width:767px){
+                        flex-direction: column;
+                        gap: 0;
+                    }
+                }
+                .wpcf7-form-control-wrap, label{
+                    width: 100%;
+                    color: white;
+                }
+                input{
+                    height: 36px;
+                    margin-bottom: 13px;
+                }
+                textarea{
+                    height: 99px;
+                    margin-bottom: 28px;
+                }
+                input, textarea{
+                    background-color: rgba(245,248,249,0.5);
+                    border-radius: 6px;
+                    border: 1px solid #E1E8EE;
+                    width: 100% !important;
+                }
+                .wpcf7-submit{
+                    border-radius: 6px;
+                    background: #FFF;
+                    width: 116px !important;
+                    height: 45px;
+                    flex-shrink: 0;
+                    float: right;
+                    color: #358ED7;
+                    text-align: center;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+    
+}
+
+.widget{
+    list-style: none;
+}
+.copyright{
+    padding-bottom: 36px !important;
+    background-color: #111;
+    padding: 0px 160px;
+    @media(max-width:1200px){
+        padding: 0px 60px;
+    }
+    @media(max-width:767px){
+        padding: 0px 40px;
+    }
+    .copyright_content{
+        color: white;
+       p{
+        font-size: 12px !important ;
+       }
+    }
+    .footer_menu{
+        @media(max-width:991.98px){
+            display: none;
+        }
+        #menu-footer{
+            padding-left: 0px;
+            display: flex;
+            justify-content: space-around;
+            li{
+                list-style: none;
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .social_media{
+        justify-content: end;
+        display: flex;
+        li{
+            display: flex;
+            a{
+                margin-right: 26px;
+                color: white;
+                text-decoration: none;
+                background-color: rgba(217,217,217,0.1);
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                font-size: 8px;
+                justify-content: center;
+                align-items: center;
+                @media(max-width:500px){
+                    margin-right: 10px;
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}

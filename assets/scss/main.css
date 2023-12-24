@@ -1,0 +1,153 @@
+.header {
+  display: none !important;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+.hamburger .line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+
+#hamburger-1.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+#hamburger-1.is-active .line:nth-child(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+#hamburger-1.is-active .line:nth-child(3) {
+  transform: translateY(-14px) rotate(-45deg);
+}
+
+.HeroBanner {
+  height: 2px !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.HeroBanner .HeroBanner-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.HeroBanner .HeroBanner-wrapper .HeroBanner-image {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.HeroBanner .HeroBanner-wrapper h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+.HeroBanner .HeroBanner-wrapper .subheading {
+  color: white;
+  opacity: 0.8;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  padding: 0px 150px;
+}
+.HeroBanner .HeroBanner-wrapper .HeroBanner-button {
+  border: 1px solid white;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.HeroBanner .HeroBanner-wrapper .HeroBanner-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.CtaModule {
+  position: relative;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.CtaModule .CtaModule-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.CtaModule .CtaModule-wrapper h3 {
+  color: white;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.CtaModule .CtaModule-wrapper h3::before {
+  content: "";
+  height: 2px;
+  width: 200px;
+  position: absolute;
+  background: white;
+  bottom: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.CtaModule .CtaModule-wrapper .CtaModule-content {
+  padding: 0px 200px;
+  color: white;
+  opacity: 0.8;
+}
+.CtaModule .CtaModule-wrapper .CtaModule-button {
+  border: 1px solid white;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.CtaModule .CtaModule-wrapper .CtaModule-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.News-Posts .News-PostsWrapper .NewsCard .Image {
+  margin-bottom: 20px;
+}
+.News-Posts .News-PostsWrapper .NewsCard .Image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}
+.News-Posts .News-PostsWrapper .NewsCard h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.News-Posts .News-PostsWrapper .NewsCard .button a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  padding-left: 14px;
+}
+.News-Posts .News-PostsWrapper .NewsCard .button a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 1px;
+  background-color: black;
+}/*# sourceMappingURL=main.css.map */

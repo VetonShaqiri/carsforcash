@@ -1,0 +1,44 @@
+
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/hamburger';
+@import 'partials/typography';
+
+@import 'views/home';
+@import 'views/contact';
+
+.buttonhover::after,
+.buttonhover::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: 0.5s;
+}
+
+.buttonhover::after {
+    top: -9px;
+    left: -9px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+.buttonhover::before {
+    bottom: -9px;
+    right: -9px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.buttonhover:hover {
+    color: #fff;
+}
+
+.buttonhover:hover::after,
+.buttonhover:hover::before {
+    width: 30px;
+    height: 30px;
+    border-color: #fff;
+}
+
+
